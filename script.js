@@ -17,15 +17,15 @@ function fetchData(e){
 			  }
 		else{
 			setTimeout(()=>{
-					reject();  
+					reject(); 
 				  },4000);
 		   }
 	     });
 	prom.then(()=>{
 		alert(`Welcome, ${name}. You can vote.`);
 	})
-	.catch(()=>{
-		alert(`Oh sorry, ${name}. You aren't old enough.`);
+	.catch((error)=>{
+		alert(`Oh sorry ${name}. You aren't old enough.`);
 	});
 }
 
