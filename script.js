@@ -22,10 +22,10 @@ function fetchData(e){
 		   }
 	     });
 	prom.then(()=>{
-		alert(`Welcome, ${name}. You can vote`);
+		alert(`Welcome, ${name}. You can vote.`);
 	})
 	.catch(()=>{
-		alert(`Oh sorry, ${name}. You aren't old enough`);
+		alert(`Oh sorry, ${name}. You aren't old enough.`);
 	});
 }
 
